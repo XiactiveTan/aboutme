@@ -24,8 +24,8 @@
                 background-size: 360px 360px; /* image size */
                 animation: bg 15s infinite linear;
                 backdrop-filter: blur(2px);
+                overflow-x: hidden;
             }
-
             @keyframes bg {
                 0% {
                   background-position: 0 0;
@@ -34,6 +34,25 @@
                   background-position: 360px 360px;
                 }
             }
+
+            #luxy{
+                animation: ST 0.5s both cubic-bezier(0.455, 0.03,  0.515, 0.955)
+                
+            }
+
+            @keyframes ST {
+                0%{
+                    opacity: -4;
+                    transform: scale(2,2);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1,1);
+                }
+            }
+
+
 
             .flexbox{
                 display: flex;
