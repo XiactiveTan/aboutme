@@ -23,6 +23,7 @@
                 background-image: url(image/background.png);
                 background-size: 360px 360px; /* image size */
                 animation: bg 15s infinite linear;
+                animation: ST 0.5s both cubic-bezier(0.455, 0.03,  0.515, 0.955);
                 backdrop-filter: blur(2px);
                 overflow-x: hidden;
             }
@@ -33,11 +34,6 @@
                 100% {
                   background-position: 360px 360px;
                 }
-            }
-
-            #luxy{
-                animation: ST 0.5s both cubic-bezier(0.455, 0.03,  0.515, 0.955)
-                
             }
 
             @keyframes ST {
@@ -91,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="luxy-el introduce" id="full">
+            <div class="luxy-el introduce" id="full" data-speed-y="0">
                 <div class="flexbox">
                     <div id="Big">I LOVE ANIME!</div>
                     <span id="undertext">タンなんはアニメが大好き！</span>
