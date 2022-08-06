@@ -3,7 +3,7 @@
     <head>
         <link rel="dns-prefetch" href="//fonts.googleapis.com"> 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes user-scalable=no">
         <title>タンなんのさいと</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" id="webfont">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
@@ -20,6 +20,19 @@
                 margin: 0;
                 padding: 0;
                 background-color: rgb(235, 235, 235);
+                background-image: url(image/background.png);
+                background-size: 360px 360px; /* image size */
+                animation: bg 15s infinite linear;
+                backdrop-filter: blur(2px);
+            }
+
+            @keyframes bg {
+                0% {
+                  background-position: 0 0;
+                }
+                100% {
+                  background-position: 360px 360px;
+                }
             }
 
             .flexbox{
@@ -31,11 +44,15 @@
 
             #full{
                 height:100vh;
-                width: 100vw;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
+                overflow: hidden;
+            }
+            .introduce{
+                background-color: rgba(240, 242, 255, 0.733);
             }
         </style>
         <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -48,17 +65,25 @@
     <body>
         
         <div id="luxy">
-            <div class="luxy-el" id="full">
+            <div class="luxy-el" id="full" data-speed-y="40">
                 <div class="flexbox">
-                    <img src="XiactiveTan.svg">
-                    タンなん 公式サイト https://XiactiveTan.github.io/aboutme/
+                    <img id="XiactiveTan" src="XiactiveTan.svg">
+                    <span id="undertext">タンなん 公式サイト https://XiactiveTan.github.io/aboutme/</span>
                 </div>
             </div>
 
-            <div class="luxy-el" id="full">
+            <div class="luxy-el introduce" id="full">
                 <div class="flexbox">
-                    <img src="XiactiveTan.svg">
-                    タンなん 公式サイト https://XiactiveTan.github.io/aboutme/
+                    <div id="Big">I LOVE ANIME!</div>
+                    <span id="undertext">タンなんはアニメが大好き！</span>
+                    <div class="slider">
+                        <div class="slider-inner">
+                            <div class="slider-item"><img src="image/Gotobun.jpg"></div>
+                            <div class="slider-item"><img src="image/SPYxFamily.jpg"></div>
+                            <div class="slider-item"><img src="image/Kaguyasama1.jpg"></div>
+                            <div class="slider-item"><img src="image/Lycoris.jpg"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

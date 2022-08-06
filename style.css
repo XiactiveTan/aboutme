@@ -1,0 +1,77 @@
+#Big{
+    font-size:8vw;
+}
+
+.slider {
+    width: 54vw;
+    height: 36vw;
+    overflow: hidden;
+    margin: 0 auto;
+  
+  }
+  .slider-item {
+    width: 54vw;
+    float: left;
+    object-fit: cover;
+  }
+  img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+  .slider-inner {
+    width: 400%;
+    animation: slider 40s infinite ease;
+  }
+  
+  @keyframes slider {
+      0% {
+      transform: translateX(0);
+      }
+      25% {
+      transform: translateX(-54vw);
+      }
+      50% {
+      transform: translateX(-108vw);
+      }
+      75% {
+        transform: translateX(-162vw);
+        }
+      100% {
+      transform: translateX(0);
+      }
+  }
+
+
+/*画像サイズ指定*/
+@media screen and (max-width:739px) {
+    /*スマホ用のcssを記述*/
+    #XiactiveTan{
+        width: 90vmin;
+    }
+
+    #undertext{
+        font-size:3vmin;
+    }
+  }
+  
+  @media only screen and (min-width:740px) and (max-width:1150px) {
+    /*tablet用のcssを記述*/
+    #XiactiveTan{
+        width: 90vmin;
+    }
+
+    #undertext{
+        font-size:2.5vmin;
+    }
+  }
+  
+  @media screen and (min-width:1150px) {
+    #XiactiveTan{
+        width: 50vw;
+    }
+
+    #undertext{
+        font-size: 1.5vw;
+    }
+  }
