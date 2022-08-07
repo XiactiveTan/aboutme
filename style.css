@@ -3,14 +3,14 @@
 }
 
 .slider {
-    width: 54vw;
-    height: 36vw;
+    width: 108vmin;
+    height: 72vmin;
     overflow: hidden;
     margin: 0 auto;
   
   }
   .slider-item {
-    width: 54vw;
+    width: 108vmin;
     float: left;
     object-fit: cover;
   }
@@ -29,18 +29,21 @@
       transform: translateX(0);
       }
       25% {
-      transform: translateX(-54vw);
+      transform: translateX(-108vmin);
       }
       50% {
-      transform: translateX(-108vw);
+      transform: translateX(-216vmin);
       }
       75% {
-        transform: translateX(-162vw);
+        transform: translateX(-324vmin);
         }
       100% {
       transform: translateX(0);
       }
   }
+/*ハンバーガー用*/
+
+
 
 
 /*画像サイズ指定*/

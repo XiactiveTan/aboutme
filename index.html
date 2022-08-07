@@ -15,7 +15,9 @@
                 font-family: 'Inter', 'Noto Sans JP';
                 font-weight: 700;
             }
-            
+            header{
+                position: absolute;
+            }
             body {
                 margin: 0;
                 padding: 0;
@@ -24,6 +26,7 @@
                 background-size: 360px 360px; /* image size */
                 animation: bg 15s infinite linear,ST 0.5s both cubic-bezier(0.455, 0.03,  0.515, 0.955);
                 backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
                 overflow-x: hidden;
             }
             @keyframes bg {
@@ -77,6 +80,7 @@
     </head>
 
     <body>
+        
         
         <div id="luxy">
             <div class="luxy-el" id="full" data-speed-y="40">
